@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e5d1202ee55716afe173.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tcpServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tcpServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tcpServer-Debug-60648d58b5907843663a.json",
+					"name" : "tcpServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tcpServer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tcpServer_autogen-Debug-69ef498d5770363e424c.json",
+					"name" : "tcpServer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tcpServer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tcpServer_autogen_timestamp_deps-Debug-dc20a67dc3c8a2828397.json",
+					"name" : "tcpServer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/jiyong/development/qt/tcpServer/tcpServer/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug",
+		"source" : "/Users/jiyong/development/qt/tcpServer/tcpServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

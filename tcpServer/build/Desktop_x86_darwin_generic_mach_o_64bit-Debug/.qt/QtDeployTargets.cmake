@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_tcpServer_FILE /Users/jiyong/development/qt/tcpServer/tcpServer/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/tcpServer.app/Contents/MacOS/tcpServer)
+set(__QT_DEPLOY_TARGET_tcpServer_TYPE EXECUTABLE)
