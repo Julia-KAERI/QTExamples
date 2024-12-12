@@ -1,10 +1,10 @@
-# /*/build/
-# /*/*/build/
-
-/ImageView/build/
-/Plot2d/build/
-/PlotView/build/
-/QChartExample/build/
-/socketExample01/build/
-/tcpClient/build/
-/tcpServer/build/
+/*/build/
+/*/*/build/
+/*/.vscode/
+# /ImageView/build/
+# /Plot2d/build/
+# /PlotView/build/
+# /QChartExample/build/
+# /socketExample01/build/
+# /tcpClient/build/
+# /tcpServer/build/
