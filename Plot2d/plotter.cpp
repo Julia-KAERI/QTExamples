@@ -40,3 +40,7 @@ void Plotter::addScatterPlot(QVector<double>x, QVector<double> y, QCPScatterStyl
     this->ui->plt->yAxis->scaleRange(1.1, this->ui->plt->yAxis->range().center());
     this->ui->plt->xAxis->scaleRange(1.1, this->ui->plt->xAxis->range().center());
 }
+
+void Plotter::addLog(QString txt){
+    this->ui->log->appendPlainText(txt);
+}

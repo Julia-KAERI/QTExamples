@@ -8,7 +8,9 @@ CONFIG += c++17
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-INCLUDEPATH += /Users/jiyong/vcpkg/packages/eigen3_x64-osx/include
+# INCLUDEPATH += {$VCPKG_ROOT}/packages/eigen3_x64-osx/include
+# INCLUDEPATH += ${VCPKG_ROOT}/packages/eigen3_arm64-osx/include
+INCLUDEPATH += /Users/jiyongso/Lib/vcpkg/packages/eigen3_arm64-osx/include
 
 SOURCES += \
     main.cpp \

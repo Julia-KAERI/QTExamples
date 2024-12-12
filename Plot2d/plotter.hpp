@@ -21,6 +21,7 @@ public:
 
     void addLinePlot(QVector<double> , QVector<double>, QPen);
     void addScatterPlot(QVector<double> , QVector<double>,  QCPScatterStyle);
+    void addLog(QString);
 
 
 
