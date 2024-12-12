@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_tcpCleint_FILE /Users/jiyong/development/qt/tcpClient/tcpCleint/build/Desktop_x86_darwin_generic_mach_o_64bit-Debug/tcpCleint.app/Contents/MacOS/tcpCleint)
-set(__QT_DEPLOY_TARGET_tcpCleint_TYPE EXECUTABLE)
