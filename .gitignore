@@ -6,5 +6,5 @@
 /PlotView/build/
 /QChartExample/build/
 /socketExample01/build/
-/tcpClient/tcpCleint/build/
-/tcpServer/TcpServer/build/
+/tcpCleint/build/
+/tcpServer/build/
