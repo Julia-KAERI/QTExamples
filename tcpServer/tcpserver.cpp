@@ -2,7 +2,7 @@
 #include "./ui_tcpserver.h"
 #include <QHostAddress>
 #include <QtNetwork>
-
+#include <iostream>
 // 참고한 사이트
 //
 // https://coding-chobo.tistory.com/42
@@ -57,24 +57,33 @@ void tcpServer::startServer()
     this->ui->plainTextEdit->appendPlainText(tr("IP address : %1 and port : %2").arg(ipAddress).arg(mServer->serverPort()));
 }
 
+void tcpServer::waitConnection()
+{
+    clientConnection = mServer->nextPendingConnection();
+    connect(clientConnection, SIGNAL(readyRead()), this, SLOT(readyToReceive()));
+    connect(clientConnection, &QAbstractSocket::disconnected,
+            clientConnection, &QObject::deleteLater);
+}
+
 void tcpServer::sendMsgToClient()
 {
+    std::cout<<"1"<<std::endl;
     QByteArray msg;
     QDataStream out(&msg, QIODevice::WriteOnly);
     out.setVersion(QDataStream::Qt_6_5);
 
 
-    out << this->ui->lineEdit->text();
+    out << (this->ui->lineEdit->text());
 
     // this->ui->plainTextEdit->appendPlainText(this->ui->lineEdit->text());
-    QTcpSocket *clientConnection = mServer->nextPendingConnection();
-    connect(clientConnection, SIGNAL(readyRead()), this, SLOT(readyToReceive()));
-    connect(clientConnection, &QAbstractSocket::disconnected,
-            clientConnection, &QObject::deleteLater);
+    // QTcpSocket *clientConnection = mServer->nextPendingConnection();
+    // connect(clientConnection, SIGNAL(readyRead()), this, SLOT(readyToReceive()));
+    // connect(clientConnection, &QAbstractSocket::disconnected,
+    //         clientConnection, &QObject::deleteLater);
     //! [7] //! [8]
 
     clientConnection->write(msg);
-    clientConnection->disconnectFromHost();
+    // clientConnection->disconnectFromHost();
     this->ui->lineEdit->clear();
 }
 
@@ -128,7 +137,8 @@ void tcpServer::newClient()
     QTcpSocket *clientConnection = mServer->nextPendingConnection();
     connect(clientConnection, &QAbstractSocket::disconnected,
             clientConnection, &QObject::deleteLater);
-    connect(clientConnection, SIGNAL(dataReceived), this, SLOT(msgReceived));
+    // connect(clientConnection, SIGNAL(dataReceived()), this, SLOT(msgReceived()));
+    connect(clientConnection, &tcpServer::dataReceived, clientConnection, &tcpServer.msgReceived);
     this->ui->plainTextEdit->appendPlainText(tr("Connection : %1 : %2")
                                                  .arg((clientConnection->peerAddress()).toString())
                                                  .arg(clientConnection->peerPort()));

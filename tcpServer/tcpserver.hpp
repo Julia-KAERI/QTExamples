@@ -21,6 +21,7 @@ public:
     tcpServer(QWidget *parent = nullptr);
     ~tcpServer();
 
+    void waitConnection();
     QTcpServer* mServer = nullptr;
 
 private:
@@ -39,6 +40,7 @@ private slots:
 
 private:
     Ui::tcpServer *ui;
+    QTcpSocket *clientConnection = nullptr;
     QHash<QTcpSocket*, QByteArray*> buffers; //We need a buffer to store data until block has completely received
     QHash<QTcpSocket*, qint32*> sizes;
 };

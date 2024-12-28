@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_fortuneserver_FILE /Users/jiyongso/development/Qt/fortune/server/fortuneserver.app/Contents/MacOS/fortuneserver)
+set(__QT_DEPLOY_TARGET_fortuneserver_TYPE EXECUTABLE)

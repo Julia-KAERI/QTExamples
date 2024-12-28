@@ -1,0 +1,9 @@
+# ninja log v6
+1	156	1734496767052086304	fortuneclient_autogen/timestamp	48309c4041f4232b
+1	156	1734496767052086304	fortuneclient_autogen/mocs_compilation.cpp	48309c4041f4232b
+1	156	1734496767052086304	/Users/jiyongso/development/Qt/fortune/client/fortuneclient_autogen/timestamp	48309c4041f4232b
+1	156	1734496767052086304	/Users/jiyongso/development/Qt/fortune/client/fortuneclient_autogen/mocs_compilation.cpp	48309c4041f4232b
+157	913	1734496767059505977	CMakeFiles/fortuneclient.dir/fortuneclient_autogen/mocs_compilation.cpp.o	c45d9aca23910d23
+157	916	1734496767059804525	CMakeFiles/fortuneclient.dir/main.cpp.o	d9241bcfc864fc1e
+157	1988	1734496767059697231	CMakeFiles/fortuneclient.dir/client.cpp.o	da82a609e877aac3
+1989	2094	1734496768891718712	fortuneclient.app/Contents/MacOS/fortuneclient	116e0189412a2067

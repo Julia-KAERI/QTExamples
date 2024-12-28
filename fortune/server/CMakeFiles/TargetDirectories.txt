@@ -1,0 +1,9 @@
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/fortuneserver.dir
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/edit_cache.dir
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/rebuild_cache.dir
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/list_install_components.dir
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/install.dir
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/install/local.dir
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/install/strip.dir
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/fortuneserver_autogen_timestamp_deps.dir
+/Users/jiyongso/development/Qt/fortune/server/CMakeFiles/fortuneserver_autogen.dir

@@ -1,0 +1,480 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "fortuneserver.app/Contents/MacOS/fortuneserver"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"_qt_internal_create_executable",
+			"qt6_add_executable",
+			"qt_add_executable",
+			"install",
+			"target_link_libraries",
+			"find_package",
+			"find_dependency",
+			"_qt_internal_find_third_party_dependencies",
+			"include",
+			"set_target_properties"
+		],
+		"files" : 
+		[
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"CMakeLists.txt",
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6/FindWrapOpenGL.cmake",
+			"/opt/homebrew/Cellar/cmake/3.31.2/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6/Qt6Config.cmake",
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 945,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 646,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 695,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"file" : 7,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 181,
+				"parent" : 8
+			},
+			{
+				"file" : 6,
+				"parent" : 9
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 43,
+				"parent" : 10
+			},
+			{
+				"file" : 5,
+				"parent" : 11
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 35,
+				"parent" : 12
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 36,
+				"parent" : 13
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 76,
+				"parent" : 14
+			},
+			{
+				"file" : 2,
+				"parent" : 15
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 48,
+				"parent" : 16
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 55,
+				"parent" : 10
+			},
+			{
+				"file" : 8,
+				"parent" : 18
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 62,
+				"parent" : 19
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 647,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 181,
+				"parent" : 8
+			},
+			{
+				"file" : 10,
+				"parent" : 22
+			},
+			{
+				"command" : 9,
+				"file" : 10,
+				"line" : 57,
+				"parent" : 23
+			},
+			{
+				"file" : 9,
+				"parent" : 24
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 62,
+				"parent" : 25
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 21,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"frameworks" : 
+			[
+				{
+					"backtrace" : 21,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtCore.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtGui.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtNetwork.framework"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtWidgets.framework"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/Users/jiyongso/development/Qt/fortune/server/fortuneserver_autogen/include"
+				},
+				{
+					"backtrace" : 21,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtCore.framework/Headers"
+				},
+				{
+					"backtrace" : 21,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/mkspecs/macx-clang"
+				},
+				{
+					"backtrace" : 21,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtGui.framework/Headers"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtNetwork.framework/Headers"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtWidgets.framework/Headers"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					21
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "fortuneserver_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "fortuneserver_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "fortuneserver::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "."
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-DQT_QML_DEBUG -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-F/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib",
+				"role" : "frameworkPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtGui.framework/Versions/A/QtGui",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "-framework OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework AGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "-framework AppKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "-framework ImageIO",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "-framework Metal",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "/Users/jiyongso/Lib/Qt6/6.8.1/macos/lib/QtCore.framework/Versions/A/QtCore",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "-framework IOKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "-framework DiskArbitration",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "-framework UniformTypeIdentifiers",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "fortuneserver",
+	"nameOnDisk" : "fortuneserver",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				4
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				5
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/jiyongso/development/Qt/fortune/server/fortuneserver_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "server.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "server.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/jiyongso/development/Qt/fortune/server/fortuneserver_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/jiyongso/development/Qt/fortune/server/fortuneserver_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "EXECUTABLE"
+}

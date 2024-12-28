@@ -1,0 +1,9 @@
+# ninja log v6
+2	155	1734496756065748679	fortuneserver_autogen/timestamp	4bc7e0a97b4c831a
+2	155	1734496756065748679	fortuneserver_autogen/mocs_compilation.cpp	4bc7e0a97b4c831a
+2	155	1734496756065748679	/Users/jiyongso/development/Qt/fortune/server/fortuneserver_autogen/timestamp	4bc7e0a97b4c831a
+2	155	1734496756065748679	/Users/jiyongso/development/Qt/fortune/server/fortuneserver_autogen/mocs_compilation.cpp	4bc7e0a97b4c831a
+156	895	1734496756073606904	CMakeFiles/fortuneserver.dir/fortuneserver_autogen/mocs_compilation.cpp.o	4f5c7c9e75d15d05
+156	908	1734496756073825326	CMakeFiles/fortuneserver.dir/main.cpp.o	d0c9f7f2d5ff23ab
+156	1954	1734496756073930495	CMakeFiles/fortuneserver.dir/server.cpp.o	35a1811d624b6a1
+1955	2052	1734496757872096561	fortuneserver.app/Contents/MacOS/fortuneserver	d76197396ef3d21e
