@@ -8,14 +8,16 @@ ImageViewer::ImageViewer(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::ImageViewer)
 {
-
-
-
+    QLabel scaleLabel;
+    scaleLabel.setText("Scale .... ");
     ui->setupUi(this);
-    ui->toolBar->addAction(ui->actionOpen);
-    connect(this->ui->actionOpen, SIGNAL(toggled(bool)), this, SLOT(openFile()));
-
+    // ui->toolBar->addAction(ui->actionOpen);
+    ui->toolBar->addWidget(&scaleLabel);
+    ui->toolBar->update();
+    connect(this->ui->actionOpen, SIGNAL(triggered(bool)), this, SLOT(openFile()));
+    this->ui->splitter->setSizes(QList<int>({200, 700}));
 }
+
 
 ImageViewer::~ImageViewer()
 {
@@ -43,9 +45,20 @@ void ImageViewer::setLabelImage(QString fp)
 
 void ImageViewer::openFile()
 {
-    QString fileName;
-
+    QString dirName;
+    dirName = QFileDialog::getExistingDirectory(this,tr("Choose Or Create Directory"),
+                                                          "/Volumes/NeutronImage",
+                                                        QFileDialog::ShowDirsOnly| QFileDialog::DontResolveSymlinks |QFileDialog::DontUseNativeDialog);
     // fileName = QFileDialog::getOpenFileName(this, tr("Open Image"), "/Volumes/NeutronImage", tr("Image Files (*.png *.jpg *.bmp *.tif)"));
-    fileName = QFileDialog::getOpenFileName(0, "Open some file", "/Volumes/NeutronImage", QObject::tr("Image Files (*.png *.jpg *.bmp *.tif)"), nullptr, QFileDialog::DontUseNativeDialog);
-    this->setLabelImage((fileName));
+    // fileName = QFileDialog::getOpenFileName(0, "Open some file", "/Volumes/NeutronImage", QObject::tr("Image Files (*.png *.jpg *.bmp *.tif)"), nullptr, QFileDialog::DontUseNativeDialog);
+    // this->setLabelImage((fileName));
+    if (dirName.size() > 0){
+        this->ui->plainTextEdit->appendPlainText(dirName);
+        this->ui->plainTextEdit->appendPlainText(QString::number(dirName.size()));
+        QDir directory(dirName);
+        QStringList fileList = directory.entryList(QStringList() << "*.tif" << "*.TIF",QDir::Files);
+        for(const auto& ff: fileList ){
+            this->ui->plainTextEdit->appendPlainText(ff);
+        }
+    }
 }

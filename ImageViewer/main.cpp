@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     ImageViewer w;
 
     w.show();
-    // w.setLabelText(QString("ab"));
+
     w.setLabelImage();
 
     return a.exec();
