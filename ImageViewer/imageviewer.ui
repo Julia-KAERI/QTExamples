@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1018</width>
-    <height>768</height>
+    <width>1222</width>
+    <height>935</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -38,7 +38,16 @@
       <widget class="QWidget" name="horizontalLayoutWidget">
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QListWidget" name="listWidget"/>
+         <widget class="QListWidget" name="listWidget">
+          <property name="font">
+           <font>
+            <family>D2Coding</family>
+           </font>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -73,8 +82,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>257</width>
-                 <height>190</height>
+                 <width>561</width>
+                 <height>419</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -110,7 +119,13 @@
      </widget>
     </item>
     <item>
-     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+       </font>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -119,7 +134,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1018</width>
+     <width>1222</width>
      <height>24</height>
     </rect>
    </property>
@@ -129,6 +144,7 @@
     </property>
     <addaction name="actionOpen"/>
     <addaction name="separator"/>
+    <addaction name="actionViewOption"/>
    </widget>
    <addaction name="menuOpen"/>
   </widget>
@@ -156,8 +172,8 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionOpen"/>
-   <addaction name="actionRescale"/>
    <addaction name="separator"/>
+   <addaction name="actionViewOption"/>
   </widget>
   <action name="actionOpen">
    <property name="icon">
@@ -173,15 +189,12 @@
     <bool>true</bool>
    </property>
   </action>
-  <action name="actionRescale">
+  <action name="actionViewOption">
    <property name="icon">
     <iconset theme="QIcon::ThemeIcon::EditFind"/>
    </property>
    <property name="text">
-    <string>Rescale</string>
-   </property>
-   <property name="menuRole">
-    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+    <string>ViewOption</string>
    </property>
   </action>
  </widget>
