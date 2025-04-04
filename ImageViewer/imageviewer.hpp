@@ -9,7 +9,17 @@
 #include <QListWidgetItem>
 #include <QMdiArea>
 #include <QMdiSubWindow>
+#include <QRgb>
+#include <QColor>
+#include <QFontDatabase>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QString>
+#include <QGraphicsRectItem>
+#include <QPainterPath>
 #include "dialog.hpp"
+#include "histview.hpp"
+#include <opencv2/opencv.hpp>
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -27,16 +37,23 @@ public slots:
     void openDir();
     void plotItem(QListWidgetItem*);
     void configScale();
-
+    void updatePanel(QMdiSubWindow*);
+    void updateHistogram();
 public:
     QDir dataDir;
     Dialog *configDlg;
+    QFont mainFont;
+    QGraphicsScene *plotScene;
+    QGraphicsRectItem * plotBorder;
+    HistView *plotView;
     int rotation=0;
     int scale=100;
     int contrast=100;
     ImageViewer(QWidget *parent = nullptr);
-    void setLabelText(QString);
-    void setLabelImage(QString fp = QString(""));
+    // void setLabelText(QString);
+    // void setLabelImage(QString fp = QString(""));
+    void updatePlotView();
+    void plotHistogram();
     ~ImageViewer();
 
 
@@ -44,5 +61,5 @@ public:
 private:
 };
 
-#endif // IMAGEVIEWER_HPP
+#endif // IMAGEVsIEWER_HPP
 

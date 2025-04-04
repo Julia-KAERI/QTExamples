@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/fonts">
+        <file>fonts/D2Coding-Ver1.3.2-20180524-all.ttc</file>
+        <file>fonts/NanumGothicEco.ttf</file>
+        <file>fonts/NanumMyeongjo.ttf</file>
+    </qresource>
+</RCC>

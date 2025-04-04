@@ -10,16 +10,23 @@ CONFIG += c++17
 
 SOURCES += \
     dialog.cpp \
+    # imagedata.cpp \
+    histview.cpp \
     main.cpp \
-    imageviewer.cpp
+    imageviewer.cpp \
+    subplotwindow.cpp
 
 HEADERS += \
     dialog.hpp \
-    imageviewer.hpp
+    # imagedata.hpp \
+    histview.hpp \
+    imageviewer.hpp \
+    subplotwindow.hpp
 
 FORMS += \
     dialog.ui \
-    imageviewer.ui
+    imageviewer.ui \
+    subplotwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -28,3 +35,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     ImageViewer.qrc
+
+unix: CONFIG += link_pkgconfig
+unix: PKGCONFIG += opencv4
