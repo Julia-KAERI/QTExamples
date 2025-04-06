@@ -1,6 +1,7 @@
 /*/build/
 /*/*/build/
 /*/.vscode/
+**/.DS_Store
 # /ImageView/build/
 # /Plot2d/build/
 # /PlotView/build/
